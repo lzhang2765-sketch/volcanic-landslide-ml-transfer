@@ -81,7 +81,7 @@ All six landscapes influenced model development or selection. Labels are heterog
 
 ## Citation
 
-Citation metadata is provided in `CITATION.cff`. A paper DOI and public repository URL should be added after approval and publication.
+Citation metadata is provided in `CITATION.cff`. The verified repository URL is <https://github.com/lzhang2765-sketch/volcanic-landslide-ml-transfer>. A paper DOI should be added when available and separately approved.
 
 ## AI assistance
 

@@ -7,6 +7,7 @@ authors:
     given-names: Leo
 version: 0.1.0
 license: MIT
+repository-code: "https://github.com/lzhang2765-sketch/volcanic-landslide-ml-transfer"
 keywords:
   - landslide susceptibility
   - geographical transfer

@@ -2,13 +2,25 @@
 
 **Prepared:** 6 November 2026  
 **Package:** `volcanic-landslide-ml-transfer`  
-**Publication action:** none performed
+**Publication action:** verified initial push to a private GitHub repository; public visibility not approved
 
 ## Overall finding
 
-The local package is technically coherent, installs in a fresh Python 3.10 environment and traces every headline numerical claim to frozen V2 outputs. The code/results-only release boundary excludes all source and unit-level spatial data. The owner approved MIT for original code and approved creation/push of a private GitHub repository, but did **not** approve public visibility. ISEF/school/AUSSEF compliance for the student's AI-assisted submission materials still requires human confirmation. Unresolved source-data rights prevent a later data/map release but do not place restricted data inside this package.
+The local package is technically coherent, installs in a fresh Python 3.10 environment and traces every headline numerical claim to frozen V2 outputs. The code/results-only release boundary excludes all source and unit-level spatial data. The owner approved MIT for original code and creation/push of a private GitHub repository, which was completed and verified at <https://github.com/lzhang2765-sketch/volcanic-landslide-ml-transfer>. The repository remains **private**; public visibility has not been approved. ISEF/school/AUSSEF compliance for the student's AI-assisted submission materials still requires human confirmation. Unresolved source-data rights prevent a later data/map release but do not place restricted data inside this package.
 
-No Git commit, push, remote creation, deletion of original files or modification of a frozen scientific record was performed.
+The verified initial commit is `55b6a304b3aee003ca9f85996f626589e2f4cee9`, containing 191 files on `main`. Its local and remote commit and tree identities matched after the push. No authoritative research file, scientific result or frozen scientific record was modified.
+
+## Private GitHub verification
+
+| Check | Verified value |
+|---|---|
+| Repository | <https://github.com/lzhang2765-sketch/volcanic-landslide-ml-transfer> |
+| Visibility | `PRIVATE` |
+| Default branch | `main` |
+| Initial commit | `55b6a304b3aee003ca9f85996f626589e2f4cee9` |
+| Git tree | `6f43baeb8c2df77092958ca94501f0381ac822f4` |
+| Committed file count | 191 |
+| Remote comparison | Local HEAD, `origin/main`, GitHub API commit, tree and file count matched |
 
 ## Source directories inspected
 
@@ -66,7 +78,7 @@ The correction log's hash `28461738b10149976bc924e450ea5c7e0d3e5a12b2982eaa28af1
 | Email addresses | PASS | No address remains; six historical source modules had direct public data-custodian/corresponding-author addresses replaced with route descriptions |
 | Student contact details | PASS | No contact information included |
 | Raw/restricted data | PASS for package boundary | No raw/processed scientific or GIS files included |
-| Large files | PASS | No file exceeds 10 MB; the 189-file package is about 4.6 MB |
+| Large files | PASS | No file exceeds 1 MB; the 191-file package contains about 4.37 MB of tracked file content and its largest file is 296,376 bytes |
 | Caches/binaries | PASS | No pyc, DS_Store, DOCX, XLSX, PKL, NPZ, NPY, TIFF or gzip file included |
 | Figure metadata | PASS | Selected PNGs identify Matplotlib only; no personal path or author metadata found |
 
@@ -85,6 +97,7 @@ The correction log's hash `28461738b10149976bc924e450ea5c7e0d3e5a12b2982eaa28af1
 ### Checks run in this preparation pass
 
 - Package archived-output tests: **8 passed** in 0.10 s in the final local gate.
+- Final tracked-tree and complete-history security scan: **PASS**. The one-commit history contains no credential signature, generic credential assignment, private key, personal email, local/cloud path, sensitive filename, excluded scientific-data extension or unexpected large file.
 - Frozen-workspace focused tests: **8 passed, 9 deselected** in 13.43 s. These checked preregistration ordering, selection, output manifests, firewall flags and geological-history gates without fitting models.
 - Static AST parse: all 127 included Python files passed.
 - Configuration and metadata checks: all 11 JSON configurations parsed, `CITATION.cff` parsed as YAML/CFF 1.2.0, and all local Markdown link targets resolved.
@@ -119,7 +132,9 @@ No headline result was found to be untraceable. The principal traceability limit
 2. Exact provenance of the substantive 25 October edit to the root predecessor manuscript remains unknown, although the hash mismatch itself is explained and the logged original survives unchanged in the backup.
 3. Decide whether any per-unit derived dataset, susceptibility map or prediction product will ever be released. Atitlán, Lombok, CHELSA data-file terms and several national geology licences must be resolved before such a release; none is included now.
 4. Add any paper DOI only after it exists and publication is separately approved.
+5. GitHub secret scanning is disabled while the repository is private, and branch protection is unavailable for this private repository under the current account plan. Recheck and enable the available protections as part of the public-visibility step.
+6. Insert the verified repository URL into the final manuscript Code Availability wording at publication; `README.md` and `CITATION.cff` now contain the URL without claiming public access while the repository remains private.
 
 ## Release recommendation
 
-**PRIVATE REPOSITORY CREATION AND INITIAL PUSH ARE APPROVED; PUBLICATION IS NOT APPROVED.** Code/dependency review, provider-rights review, clean-environment testing, traceability, licence scope and placeholder cleanup are complete for the conservative code/results-only boundary. Public visibility must wait for AI/fair-policy confirmation and a separate explicit owner approval. At the time of this audit update, no visibility change was authorized.
+**THE PRIVATE REPOSITORY AND INITIAL PUSH ARE VERIFIED; PUBLICATION IS NOT APPROVED.** Code/dependency review, provider-rights review, clean-environment testing, traceability, licence scope and final tracked-tree/history scans are complete for the conservative code/results-only boundary. Public visibility must wait for AI/fair-policy confirmation, the final manuscript Code Availability update, available GitHub security protections and a separate explicit owner approval. At the time of this audit update, no visibility change was authorized.

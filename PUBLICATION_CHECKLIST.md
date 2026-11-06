@@ -37,8 +37,9 @@
 - [x] Exclude student contact information.
 - [x] Exclude caches, logs, private documents and large binaries.
 - [x] Exclude raw/processed scientific data, predictions and GIS rasters.
-- [ ] Repeat secret and large-file scans immediately before the first commit.
-- [ ] Review the staged Git diff before any commit.
+- [x] Repeat secret and large-file scans immediately before the first commit; no credential or excluded-file candidate found.
+- [x] Review the staged Git diff before the first commit; exactly 191 approved files were staged.
+- [x] Repeat comprehensive secret, private-path, sensitive-filename, excluded-extension and large-file scans across the tracked tree and complete Git history before public release.
 
 ## Licensing and data
 
@@ -65,6 +66,9 @@
 - [x] Confirm and use `Leo Zhang` as the public author name.
 - [x] Remove fake repository-owner URL placeholders without assuming a GitHub username.
 - [x] Validate `CITATION.cff`, JSON configs and local documentation links.
+- [x] Verify the canonical repository URL, <https://github.com/lzhang2765-sketch/volcanic-landslide-ml-transfer>, for insertion into the final Code Availability statement.
+- [x] Add the verified repository URL to `README.md` and `CITATION.cff` without claiming public availability while private.
+- [ ] Add the repository URL to final manuscript Code Availability wording when public access is approved.
 - [ ] Add paper DOI/citation when final.
 - [x] Preserve a transparent statement that AI substantially assisted code, analyses, audits, figures and writing.
 - [x] Review current ISEF AI rules and document the student-authorship/citation restrictions.
@@ -76,14 +80,15 @@
 - [x] Confirm no standalone existing local remote for this project; the only parent remote is the unrelated Tweed reconstruction repository.
 - [x] Search for a readily discoverable matching public GitHub repository; none found.
 - [x] Obtain explicit owner approval to create a private remote, commit and push the audited package.
-- [ ] Create `volcanic-landslide-ml-transfer` with private visibility first.
-- [ ] Configure branch protection, secret scanning and push protection.
-- [ ] Make the first local commit only after reviewing staged contents.
-- [ ] Push only after explicit approval.
-- [ ] Review the private GitHub rendering, links, citation file and file inventory.
+- [x] Create `volcanic-landslide-ml-transfer` with private visibility first: <https://github.com/lzhang2765-sketch/volcanic-landslide-ml-transfer>.
+- [ ] Configure branch protection, secret scanning and push protection when available; secret scanning is currently disabled and branch protection is unavailable for this private repository under the current account plan.
+- [x] Make the first local commit only after reviewing staged contents: `55b6a304b3aee003ca9f85996f626589e2f4cee9` (191 files).
+- [x] Push only after explicit approval.
+- [x] Verify private remote identity and inventory: local HEAD, `origin/main`, GitHub API commit, tree and 191-file count matched; visibility remained `PRIVATE`.
+- [ ] Review the final GitHub rendering, links and citation metadata after the documentation update is committed and before changing visibility.
 - [ ] Obtain explicit approval to change visibility to public.
 - [ ] Create a tagged release/DOI only after the public package is approved.
 
 ## Stop condition
 
-Do not commit, push, create a remote, change visibility or publish a release until the owner explicitly approves the relevant action.
+Do not commit or push the current documentation updates, change visibility or publish a release until the owner explicitly approves the relevant action.
