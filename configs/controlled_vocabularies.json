@@ -1,0 +1,199 @@
+{
+  "_note": "Controlled vocabularies for Science Fair ML V2 landscape screening (Stage 1). UNKNOWN is always allowed and means 'not established'; it is never a substitute for a measured value.",
+  "candidate_class": [
+    "KNOWN_V1",
+    "NEW_CANDIDATE",
+    "REFERENCE_ONLY"
+  ],
+  "climate_class": [
+    "TROPICAL_WET",
+    "TROPICAL_SEASONAL",
+    "TEMPERATE",
+    "ARID_SEMI_ARID",
+    "HIGH_ALTITUDE",
+    "COLD",
+    "UNKNOWN"
+  ],
+  "continent": [
+    "AFRICA",
+    "ASIA",
+    "EUROPE",
+    "NORTH_AMERICA",
+    "SOUTH_AMERICA",
+    "OCEANIA",
+    "UNKNOWN"
+  ],
+  "data_accessibility": [
+    "OPEN_DOWNLOAD",
+    "OPEN_PORTAL_UNVERIFIED",
+    "VERIFIED_LOCAL_V1",
+    "LOGIN_REQUIRED",
+    "REQUEST_REQUIRED",
+    "PAPER_ONLY",
+    "NOT_FOUND",
+    "UNKNOWN"
+  ],
+  "data_role": [
+    "Y",
+    "OMEGA",
+    "DEM",
+    "ENVIRONMENT",
+    "GEOLOGY",
+    "AGE",
+    "H_CONTROL",
+    "REFERENCE",
+    "DISCOVERY_CATALOGUE"
+  ],
+  "diversity_value": [
+    "HIGH",
+    "MEDIUM",
+    "LOW",
+    "UNKNOWN"
+  ],
+  "erosional_state": [
+    "YOUNG_INTACT",
+    "MODERATE",
+    "DEEPLY_ERODED",
+    "MIXED",
+    "UNKNOWN"
+  ],
+  "evidence_stage": [
+    "PAPER_EXISTS",
+    "DATA_EXISTS",
+    "DATA_DOWNLOADABLE",
+    "DATA_SCIENTIFICALLY_USABLE",
+    "UNKNOWN"
+  ],
+  "experimental_role": [
+    "UNASSIGNED",
+    "DEVELOPMENT",
+    "FINAL_LOCKBOX"
+  ],
+  "gate": [
+    "PASS",
+    "FAIL",
+    "UNCERTAIN",
+    "NOT_REQUIRED"
+  ],
+  "h_method_candidate": [
+    "RADIAL_EDIFICE_SURFACE",
+    "PLATEAU_ENVELOPE",
+    "CALDERA_RIM_ENVELOPE",
+    "MULTI_EDIFICE",
+    "TIME_SINCE_EMPLACEMENT_ONLY",
+    "NONE",
+    "UNKNOWN"
+  ],
+  "inventory_geometry_type": [
+    "POLYGON",
+    "POINT",
+    "POLYGON_AND_POINT",
+    "POLYGON_AND_LINE",
+    "RASTER",
+    "PAPER_FIGURE_ONLY",
+    "UNKNOWN"
+  ],
+  "inventory_tier": [
+    "TIER_1",
+    "TIER_2",
+    "BOTH_AVAILABLE",
+    "UNCLEAR"
+  ],
+  "inventory_trigger": [
+    "RAINFALL",
+    "EXTREME_RAINFALL_CYCLONE",
+    "EARTHQUAKE",
+    "MIXED_BACKGROUND",
+    "UNKNOWN"
+  ],
+  "lockbox_assignment_stage": [
+    "NOT_ASSIGNED",
+    "STAGE_2_OR_LATER"
+  ],
+  "lockbox_status": [
+    "UNASSIGNED",
+    "ELIGIBLE",
+    "LOCKED",
+    "RELEASED"
+  ],
+  "priority_class": [
+    "PRIORITY_A",
+    "PRIORITY_B",
+    "HOLD",
+    "REJECT",
+    "KNOWN_V1_DECISION_PENDING",
+    "REFERENCE_ONLY"
+  ],
+  "quality": [
+    "HIGH",
+    "MEDIUM",
+    "LOW",
+    "UNAVAILABLE",
+    "UNKNOWN"
+  ],
+  "relief_class": [
+    "HIGH",
+    "MODERATE",
+    "LOW",
+    "UNKNOWN"
+  ],
+  "screen_status": [
+    "DISCOVERY",
+    "PROMISING",
+    "DEEP_SCREEN",
+    "ACCEPT",
+    "HOLD",
+    "REJECT"
+  ],
+  "screen_status_definitions": {
+    "ACCEPT": "Passes the required gates for a defined V2 dataset/experiment (not used in Stage 1)",
+    "DEEP_SCREEN": "Candidate warrants detailed Y/Omega/M/E/G/H verification (next stage)",
+    "DISCOVERY": "Candidate identified but minimally checked",
+    "HOLD": "Potentially useful but unresolved data/access/scientific issue",
+    "PROMISING": "Initial evidence suggests useful data may exist",
+    "REJECT": "Fails a critical requirement or provides insufficient value"
+  },
+  "tectonic_broad_class": {
+    "CONTINENTAL_RIFT": "CONTINENTAL_RIFT",
+    "INTRAPLATE_HOTSPOT_CONTINENTAL": "INTRAPLATE_HOTSPOT",
+    "INTRAPLATE_HOTSPOT_OCEANIC_ISLAND": "OCEANIC_ISLAND",
+    "OCEANIC_ISLAND_OTHER": "OCEANIC_ISLAND",
+    "OTHER": "OTHER",
+    "RIFT_HOTSPOT": "CONTINENTAL_RIFT",
+    "SUBDUCTION_ARC": "SUBDUCTION_ARC",
+    "UNKNOWN": "UNKNOWN"
+  },
+  "tectonic_setting": [
+    "SUBDUCTION_ARC",
+    "INTRAPLATE_HOTSPOT_CONTINENTAL",
+    "INTRAPLATE_HOTSPOT_OCEANIC_ISLAND",
+    "CONTINENTAL_RIFT",
+    "RIFT_HOTSPOT",
+    "OCEANIC_ISLAND_OTHER",
+    "OTHER",
+    "UNKNOWN"
+  ],
+  "tristate": [
+    "TRUE",
+    "FALSE",
+    "UNCERTAIN",
+    "UNKNOWN"
+  ],
+  "verification": [
+    "VERIFIED",
+    "LIKELY",
+    "UNKNOWN"
+  ],
+  "volcano_type": [
+    "STRATOVOLCANO",
+    "SHIELD",
+    "CALDERA",
+    "VOLCANIC_COMPLEX",
+    "VOLCANIC_PLATEAU",
+    "VOLCANIC_ISLAND",
+    "TEPHRA_MANTLED_TERRAIN",
+    "OTHER_VOLCANIC",
+    "NON_VOLCANIC_REFERENCE",
+    "UNKNOWN"
+  ]
+}

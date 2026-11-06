@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "allowed_extensions": [
+    ".cpg",
+    ".csv",
+    ".dbf",
+    ".geojson",
+    ".gpkg",
+    ".kml",
+    ".json",
+    ".kmz",
+    ".pdf",
+    ".prj",
+    ".shp",
+    ".shx",
+    ".tif",
+    ".tiff",
+    ".txt",
+    ".xml",
+    ".yaml",
+    ".yml",
+    ".zip"
+  ],
+  "raw_root": "data/raw/request_responses",
+  "candidates": {
+    "CHUUK_CHATAAN_2002": {
+      "qa_route": "CHUUK_SYSTEMATIC_SUPPORT_AND_COMPLETENESS_QA",
+      "requested_artifacts": [
+        {
+          "artifact_id": "CHUUK_OBSERVATION_SUPPORT",
+          "description": "Original aerial-photo index, photo footprints, flight lines, interpreted-photo coverage, or mapping sheets",
+          "accepted_extensions": [".csv", ".geojson", ".gpkg", ".kml", ".kmz", ".pdf", ".shp", ".zip"],
+          "filename_terms": ["aerial", "coverage", "flight", "footprint", "index", "mapping", "photo", "sheet", "support"]
+        },
+        {
+          "artifact_id": "CHUUK_COMPLETENESS_DOCUMENTATION",
+          "description": "Custodian documentation defining systematic mapping and completeness within a target-independent sector",
+          "accepted_extensions": [".csv", ".pdf", ".zip"],
+          "filename_terms": ["complete", "completeness", "metadata", "protocol", "readme", "systematic"]
+        }
+      ]
+    },
+    "MOUNT_ELGON_BUKALASI_2018": {
+      "qa_route": "MOUNT_ELGON_EVENT_Y_OMEGA_GEOLOGY_QA",
+      "requested_artifacts": [
+        {
+          "artifact_id": "ELGON_2018_UAV_PRODUCTS",
+          "description": "2018 orthomosaic, DSM, DTM, AOI, flight plan, or valid-data footprint",
+          "accepted_extensions": [".geojson", ".gpkg", ".kml", ".kmz", ".pdf", ".shp", ".tif", ".tiff", ".zip"],
+          "filename_terms": ["aoi", "dsm", "dtm", "flight", "footprint", "ortho", "uav"]
+        },
+        {
+          "artifact_id": "ELGON_COMPLETE_EVENT_Y",
+          "description": "Exhaustive, event-specific 2018 landslide polygons with mapping protocol",
+          "accepted_extensions": [".geojson", ".gpkg", ".kml", ".kmz", ".pdf", ".shp", ".zip"],
+          "filename_terms": ["2018", "event", "inventory", "landslide", "mudflow", "polygon"]
+        },
+        {
+          "artifact_id": "ELGON_AUTHORITATIVE_GEOLOGY",
+          "description": "Authoritative DGSM geology vector and unit legend",
+          "accepted_extensions": [".geojson", ".gpkg", ".pdf", ".shp", ".zip"],
+          "filename_terms": ["dgsm", "geology", "geologic", "lithology", "unit"]
+        }
+      ]
+    },
+    "POPOCATEPETL_PUEBLA_2017": {
+      "qa_route": "POPOCATEPETL_STUDY_AREA_C_QA",
+      "requested_artifacts": [
+        {
+          "artifact_id": "POPO_STUDY_AREA_C_PACKAGE",
+          "description": "Study Area C 754 polygons, 365 km2 boundary, cloud/snow mask, provenance, CRS, and licence",
+          "accepted_extensions": [".geojson", ".gpkg", ".pdf", ".shp", ".zip"],
+          "filename_terms": ["area_c", "cloud", "inventory", "landslide", "mask", "puebla", "snow", "study"]
+        }
+      ]
+    },
+    "REUNION_SALAZIE_1980": {
+      "qa_route": "REUNION_PRE_EVENT_M_AND_VISIBILITY_QA",
+      "requested_artifacts": [
+        {
+          "artifact_id": "REUNION_1978_DSM",
+          "description": "Author-produced 1978 SfM DSM with CRS, vertical datum, valid-data support, and uncertainty metadata",
+          "accepted_extensions": [".pdf", ".tif", ".tiff", ".zip"],
+          "filename_terms": ["1978", "dem", "dsm", "salazie", "sfm"]
+        },
+        {
+          "artifact_id": "REUNION_VISIBILITY_SUPPORT",
+          "description": "Valid-overlap, orthophoto footprint, cloud/shadow, failed-photogrammetry, or interpreted-area mask",
+          "accepted_extensions": [".geojson", ".gpkg", ".kml", ".kmz", ".pdf", ".shp", ".tif", ".tiff", ".zip"],
+          "filename_terms": ["cloud", "failed", "footprint", "mask", "orthophoto", "overlap", "shadow", "valid", "visibility"]
+        }
+      ]
+    },
+    "ST_LUCIA_TOMAS_2010": {
+      "qa_route": "ST_LUCIA_TOMAS_OMEGA_QA",
+      "requested_artifacts": [
+        {
+          "artifact_id": "ST_LUCIA_TOMAS_OBSERVATION_SUPPORT",
+          "description": "Exact 2011 Tomas systematically searched/visible polygon and cloud-shadow-fringe exclusions",
+          "accepted_extensions": [".geojson", ".gpkg", ".kml", ".kmz", ".pdf", ".shp", ".tif", ".tiff", ".zip"],
+          "filename_terms": ["2011", "cloud", "footprint", "fringe", "mask", "shadow", "tomas", "visibility"]
+        }
+      ]
+    },
+    "VANUATU_HAROLD_2020": {
+      "qa_route": "VANUATU_HAROLD_Y_OMEGA_QA",
+      "requested_artifacts": [
+        {
+          "artifact_id": "VANUATU_HAROLD_PACKAGE",
+          "description": "Original 1,481 polygons, mapped boundary, provenance, and reuse licence",
+          "accepted_extensions": [".geojson", ".gpkg", ".kml", ".kmz", ".pdf", ".shp", ".zip"],
+          "filename_terms": ["1481", "boundary", "harold", "inventory", "landslide", "mapped", "polygon"]
+        }
+      ]
+    }
+  },
+  "minimum_metadata": [
+    "candidate_id",
+    "source_or_sender",
+    "licence_or_permission",
+    "acquisition_or_mapping_date",
+    "crs_if_spatial",
+    "mapping_or_processing_method",
+    "completeness_or_coverage_statement"
+  ]
+}

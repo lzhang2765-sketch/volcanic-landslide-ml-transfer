@@ -1,0 +1,9 @@
+{
+  "protocol_file": "ELEVATION_EXPERIMENT_PROTOCOL.md",
+  "protocol_version": "ELEV_ABLATION_PROTOCOL_v1.0.0",
+  "protocol_sha256": "693df05e0fd239da80eda08133a5f3cdc3ffe63476db68e3823ad24c66632774",
+  "frozen_utc": "2026-10-17T12:27:42Z",
+  "frozen_before_any_new_model_fit": true,
+  "amendment_policy": "never edit the protocol; corrections only as timestamped AMENDMENT_vX.Y.md files listed here",
+  "amendments": []
+}

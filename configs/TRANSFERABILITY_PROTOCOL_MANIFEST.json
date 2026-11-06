@@ -1,0 +1,11 @@
+{
+  "plan_file": "TRANSFERABILITY_FACTOR_ANALYSIS_PLAN.md",
+  "plan_version": "TRANSFER_FACTOR_PLAN_v1.0.0",
+  "plan_sha256": "20a16a94379a40b00de61876df00ae044984acf12909f6d4287d2c84aef9633c",
+  "source_evidence_register_sha256": "5c35481651346c784fc2646aefeb2bbb2781f76d9f7f7cdfabbf05fe29da7b99",
+  "source_consistency_checks_sha256": "f6384e418cfa88c10e9df2b9db13a4b75450de89cb28c9948c05e84e3c876d0e",
+  "frozen_utc": "2026-10-17T12:42:32Z",
+  "frozen_before_new_calculations": true,
+  "label": "POST HOC EXPLORATORY ANALYSIS",
+  "amendments": []
+}

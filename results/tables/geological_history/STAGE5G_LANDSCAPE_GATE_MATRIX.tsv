@@ -1,0 +1,55 @@
+landscape_id	frozen_status	gate	actual_value	operator	threshold	result	evidence_source	geological_interpretation
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	MEDIAN_ABS_RESIDUAL_FRACTION	0.0539162	<=	0.1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Blocked-control vertical accuracy relative to reconstructed relief
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	ABS_BIAS_FRACTION	0.015024	<=	0.05	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Systematic held-out elevation bias relative to relief
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	HOLDOUT_BAND_FRACTION	0.642208	>=	0.6	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Coverage of held-out controls by scenario P05–P95
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	ADMISSIBLE_CONTROLS	2753	>=	12	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Quantity of independent Y-blind geological/geomorphic controls
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	SUPPORT_FRACTION	0.411719	>=	0.25	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Fraction of Stage 4A units with reconstruction support
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	NEGATIVE_REMOVAL_FRACTION	0.0591293	<=	0.1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Supported units where P50 reference is below modern DEM by more than tau_L
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	MAX_REFERENCE_SLOPE_DEG	2.40158	<=	40	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Maximum constructional reference-surface slope
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	BOUNDARY_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Structural boundary/seam behavior
+KUMAMOTO_ASO_2016	VERIFIED_GEN3_PARTIAL	PHYSICAL_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Combined physical plausibility, including pit/discontinuity checks
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	MEDIAN_ABS_RESIDUAL_FRACTION		<=	0.1	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	ABS_BIAS_FRACTION		<=	0.05	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	HOLDOUT_BAND_FRACTION		>=	0.6	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	ADMISSIBLE_CONTROLS		>=	12	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	SUPPORT_FRACTION		>=	0.25	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	NEGATIVE_REMOVAL_FRACTION		<=	0.1	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	MAX_REFERENCE_SLOPE_DEG		<=	40	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	BOUNDARY_QA		==	1	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+NOTO_PENINSULA_2024	AGE_PROXY_ONLY	PHYSICAL_QA		==	1	UNAVAILABLE_NOT_RECONSTRUCTED	outputs/stage4c_a/STAGE4C_A_RECONSTRUCTION_EVIDENCE.tsv	No surviving constructional palaeosurface; age proxy is not an H reconstruction
+LOMBOK_RINJANI_2018	FAILED_GEN3	MEDIAN_ABS_RESIDUAL_FRACTION	0.100533	<=	0.1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Blocked-control vertical accuracy relative to reconstructed relief
+LOMBOK_RINJANI_2018	FAILED_GEN3	ABS_BIAS_FRACTION	0.0231953	<=	0.05	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Systematic held-out elevation bias relative to relief
+LOMBOK_RINJANI_2018	FAILED_GEN3	HOLDOUT_BAND_FRACTION	0.634162	>=	0.6	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Coverage of held-out controls by scenario P05–P95
+LOMBOK_RINJANI_2018	FAILED_GEN3	ADMISSIBLE_CONTROLS	1569	>=	12	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Quantity of independent Y-blind geological/geomorphic controls
+LOMBOK_RINJANI_2018	FAILED_GEN3	SUPPORT_FRACTION	0.821304	>=	0.25	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Fraction of Stage 4A units with reconstruction support
+LOMBOK_RINJANI_2018	FAILED_GEN3	NEGATIVE_REMOVAL_FRACTION	0.150069	<=	0.1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Supported units where P50 reference is below modern DEM by more than tau_L
+LOMBOK_RINJANI_2018	FAILED_GEN3	MAX_REFERENCE_SLOPE_DEG	27.8457	<=	40	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Maximum constructional reference-surface slope
+LOMBOK_RINJANI_2018	FAILED_GEN3	BOUNDARY_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Structural boundary/seam behavior
+LOMBOK_RINJANI_2018	FAILED_GEN3	PHYSICAL_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Combined physical plausibility, including pit/discontinuity checks
+COTABATO_DAVAO_2019	FAILED_GEN3	MEDIAN_ABS_RESIDUAL_FRACTION	0.140832	<=	0.1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Blocked-control vertical accuracy relative to reconstructed relief
+COTABATO_DAVAO_2019	FAILED_GEN3	ABS_BIAS_FRACTION	0.0732199	<=	0.05	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Systematic held-out elevation bias relative to relief
+COTABATO_DAVAO_2019	FAILED_GEN3	HOLDOUT_BAND_FRACTION	0.572999	>=	0.6	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Coverage of held-out controls by scenario P05–P95
+COTABATO_DAVAO_2019	FAILED_GEN3	ADMISSIBLE_CONTROLS	1637	>=	12	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Quantity of independent Y-blind geological/geomorphic controls
+COTABATO_DAVAO_2019	FAILED_GEN3	SUPPORT_FRACTION	0.966507	>=	0.25	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Fraction of Stage 4A units with reconstruction support
+COTABATO_DAVAO_2019	FAILED_GEN3	NEGATIVE_REMOVAL_FRACTION	0.0297147	<=	0.1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Supported units where P50 reference is below modern DEM by more than tau_L
+COTABATO_DAVAO_2019	FAILED_GEN3	MAX_REFERENCE_SLOPE_DEG	18.5174	<=	40	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Maximum constructional reference-surface slope
+COTABATO_DAVAO_2019	FAILED_GEN3	BOUNDARY_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Structural boundary/seam behavior
+COTABATO_DAVAO_2019	FAILED_GEN3	PHYSICAL_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Combined physical plausibility, including pit/discontinuity checks
+ATITLAN_STAN_2005	FAILED_GEN3	MEDIAN_ABS_RESIDUAL_FRACTION	0.0787723	<=	0.1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Blocked-control vertical accuracy relative to reconstructed relief
+ATITLAN_STAN_2005	FAILED_GEN3	ABS_BIAS_FRACTION	0.0353213	<=	0.05	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Systematic held-out elevation bias relative to relief
+ATITLAN_STAN_2005	FAILED_GEN3	HOLDOUT_BAND_FRACTION	0.659574	>=	0.6	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Coverage of held-out controls by scenario P05–P95
+ATITLAN_STAN_2005	FAILED_GEN3	ADMISSIBLE_CONTROLS	235	>=	12	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Quantity of independent Y-blind geological/geomorphic controls
+ATITLAN_STAN_2005	FAILED_GEN3	SUPPORT_FRACTION	1	>=	0.25	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Fraction of Stage 4A units with reconstruction support
+ATITLAN_STAN_2005	FAILED_GEN3	NEGATIVE_REMOVAL_FRACTION	0.128153	<=	0.1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Supported units where P50 reference is below modern DEM by more than tau_L
+ATITLAN_STAN_2005	FAILED_GEN3	MAX_REFERENCE_SLOPE_DEG	3.2658	<=	40	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Maximum constructional reference-surface slope
+ATITLAN_STAN_2005	FAILED_GEN3	BOUNDARY_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Structural boundary/seam behavior
+ATITLAN_STAN_2005	FAILED_GEN3	PHYSICAL_QA	0	==	1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Combined physical plausibility, including pit/discontinuity checks
+DOMINICA_ERIKA_2015	FAILED_GEN3	MEDIAN_ABS_RESIDUAL_FRACTION	0.117881	<=	0.1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Blocked-control vertical accuracy relative to reconstructed relief
+DOMINICA_ERIKA_2015	FAILED_GEN3	ABS_BIAS_FRACTION	0.040423	<=	0.05	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Systematic held-out elevation bias relative to relief
+DOMINICA_ERIKA_2015	FAILED_GEN3	HOLDOUT_BAND_FRACTION	0.531856	>=	0.6	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Coverage of held-out controls by scenario P05–P95
+DOMINICA_ERIKA_2015	FAILED_GEN3	ADMISSIBLE_CONTROLS	361	>=	12	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Quantity of independent Y-blind geological/geomorphic controls
+DOMINICA_ERIKA_2015	FAILED_GEN3	SUPPORT_FRACTION	0.989231	>=	0.25	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Fraction of Stage 4A units with reconstruction support
+DOMINICA_ERIKA_2015	FAILED_GEN3	NEGATIVE_REMOVAL_FRACTION	0.14961	<=	0.1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Supported units where P50 reference is below modern DEM by more than tau_L
+DOMINICA_ERIKA_2015	FAILED_GEN3	MAX_REFERENCE_SLOPE_DEG	21.865	<=	40	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Maximum constructional reference-surface slope
+DOMINICA_ERIKA_2015	FAILED_GEN3	BOUNDARY_QA	1	==	1	PASS	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Structural boundary/seam behavior
+DOMINICA_ERIKA_2015	FAILED_GEN3	PHYSICAL_QA	0	==	1	FAIL	outputs/stage4c_b3/STAGE4C_B3_RECONSTRUCTION_VALIDATION.tsv	Combined physical plausibility, including pit/discontinuity checks

@@ -1,0 +1,39 @@
+{
+  "_note": "Stage 1 screening specification. The score is a WORKFLOW PRIORITISATION TOOL only - not a validated susceptibility metric. Hard gates are evaluated first and a high score can never override a FAIL.",
+  "version": "1.0.0",
+  "frozen_before_scoring": true,
+  "hard_gates": {
+    "Y_GATE": {"question": "Are usable instability labels available?", "PASS": "Mapped polygons/points of event or systematic inventory with documented method exist and are obtainable (open, local V1, or a known request route)", "FAIL": "No mapped inventory exists, or labels are only reports/paper figures with no recoverable geometry", "UNCERTAIN": "Inventory exists but geometry/semantics/access unverified"},
+    "OMEGA_GATE": {"question": "Can defensible observation/non-event terrain be established?", "PASS": "Explicit mapping AOI / imagery footprint / study-area or catchment boundary documented by the producers", "FAIL": "Only positives with no documented mapping domain and no defensible independent domain rule", "UNCERTAIN": "Domain plausibly recoverable (e.g. described study area, cloud mask, systematic national mapping) but not yet verified", "rule": "The bounding box or convex hull of positive polygons is NEVER accepted as Omega_obs"},
+    "M_GATE": {"question": "Can reliable modern terrain be generated?", "PASS": "A DEM of adequate resolution whose epoch is valid for the inventory (pre-event or explicitly justified) is available", "FAIL": "No adequate DEM", "UNCERTAIN": "Only post-event or uncertain-epoch DEMs"},
+    "H_STATUS": {"question": "How viable is H for this landscape?", "PASS": "Edifice/plateau/caldera geometry plus controls and geology make an independent reconstruction with uncertainty plausible", "UNCERTAIN": "Some H (e.g. time-since-emplacement or partial geometry) possible", "FAIL": "No meaningful volcanic history signal can be reconstructed", "NOT_REQUIRED": "Landscape intended only for M/E/G experiments", "note": "H_STATUS is NOT a critical gate: landscapes without H may still serve M/E/G generalisation experiments. Missing H is never encoded as zero"}
+  },
+  "critical_gates": ["Y_GATE", "OMEGA_GATE", "M_GATE"],
+  "score_components": {
+    "y_quality":            {"weight": 15, "rubric": "3 event/systematic polygon inventory >=1000 features with documented method; 2 smaller or multi-temporal polygons, or points with documented method; 1 small/reported/partial; 0 none/unknown"},
+    "omega_quality":        {"weight": 15, "rubric": "3 explicit published AOI/extent file; 2 documented study area/catchment or systematic coverage without file; 1 only inferable from context; 0 none/unknown"},
+    "tier1_availability":   {"weight": 5,  "rubric": "3 explicit source/scarp/initiation layer; 1 initiation points or partial; 0 none/unknown"},
+    "dem_quality":          {"weight": 8,  "rubric": "3 national lidar or <=10 m pre-event plausibly available; 2 30 m global pre-event-valid; 1 only post-event/poor; 0 unknown"},
+    "environment":          {"weight": 5,  "rubric": "2 global harmonisable layers (default); 3 plus local trigger data (gauges/ShakeMap); 0 none"},
+    "geology":              {"weight": 8,  "rubric": "3 digital geology <=1:50k; 2 digital 1:100k-1:500k; 1 only coarse global (GLiM) or paper maps; 0 unknown"},
+    "unit_age":             {"weight": 5,  "rubric": "3 unit ages in digital map; 2 published geochronology; 1 relative stratigraphy only; 0 unknown"},
+    "h_feasibility":        {"weight": 12, "rubric": "3 HIGH; 2 MEDIUM; 1 LOW (e.g. time-since-emplacement only, tephra mantle); 0 unavailable/unknown"},
+    "h_uncertainty":        {"weight": 5,  "rubric": "3 ensemble demonstrated (V1) or clearly feasible; 2 likely; 1 low; 0 none/unknown"},
+    "data_accessibility":   {"weight": 12, "rubric": "3 open download verified or local V1; 2 open portal unverified; 1 login/request required; 0 paper only / not found / unknown"},
+    "diversity":            {"weight": 10, "rubric": "3 fills an underrepresented continent/setting/climate/trigger; 2 moderate contribution; 1 common category; 0 unknown"}
+  },
+  "score_formula": "screening_score = sum_k weight_k * rating_k / 3  (0-100, one decimal)",
+  "priority_rule": [
+    "candidate_class REFERENCE_ONLY -> REFERENCE_ONLY",
+    "candidate_class KNOWN_V1 -> KNOWN_V1_DECISION_PENDING (V2 role decided later; V1 files untouched)",
+    "volcano_type == NON_VOLCANIC_REFERENCE -> REJECT (outside V2 volcanic scope)",
+    "manual_priority_override in {REJECT, HOLD} -> that class (downgrade only; never upgrades; reason recorded in exclusion_reason)",
+    "any critical gate (Y_GATE, OMEGA_GATE, M_GATE) == FAIL -> REJECT (score ignored)",
+    "Y_GATE == PASS and OMEGA_GATE == PASS and M_GATE == PASS and data_accessibility in {OPEN_DOWNLOAD, VERIFIED_LOCAL_V1} and score >= 55 -> PRIORITY_A",
+    "Y_GATE in {PASS, UNCERTAIN} and OMEGA_GATE in {PASS, UNCERTAIN} and M_GATE == PASS and data_accessibility not in {PAPER_ONLY, NOT_FOUND, UNKNOWN} and score >= 40 -> PRIORITY_B",
+    "diversity promotion: diversity_value == HIGH and Y_GATE == PASS and OMEGA_GATE != FAIL and M_GATE == PASS and data_accessibility in {OPEN_DOWNLOAD, OPEN_PORTAL_UNVERIFIED, VERIFIED_LOCAL_V1} -> at least PRIORITY_B",
+    "otherwise -> HOLD"
+  ],
+  "status_from_priority": {"PRIORITY_A": "DEEP_SCREEN", "PRIORITY_B": "PROMISING", "HOLD": "HOLD", "REJECT": "REJECT", "KNOWN_V1_DECISION_PENDING": "DEEP_SCREEN", "REFERENCE_ONLY": "HOLD"},
+  "accept_used_in_stage1": false
+}

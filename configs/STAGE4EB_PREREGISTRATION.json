@@ -1,0 +1,362 @@
+{
+  "bootstrap": {
+    "block": "frozen Stage 4A spatial_block_3000m",
+    "interval": "95% percentile",
+    "limitation": "within-landscape spatial uncertainty only; not uncertainty over the population of volcanoes",
+    "method": "resample held-out 3 km blocks with replacement; identical draws across models within landscape",
+    "outputs": [
+      "PR-AUC",
+      "PR lift",
+      "ROC-AUC",
+      "paired candidate-minus-comparator differences"
+    ],
+    "paired": true,
+    "replicates": 2000,
+    "seed_rule": "numpy default_rng(SEED + landscape index)"
+  },
+  "calibration": {
+    "next_stage": "final recalibration, categories and reliability are explicitly deferred",
+    "reporting": "raw Brier/log loss, calibration intercept/slope and reliability summaries; legacy Stage 4B-style inner Platt/F1 threshold only for continuity",
+    "selection": "never used for primary architecture selection"
+  },
+  "catastrophic_guard": {
+    "cotabato": "EQ1 remains included but is already near-null: a candidate fails there only if candidate lift <0.80 and paired 95% upper CI for Delta PR(candidate-Logistic) < 0",
+    "non_cotabato": "where Logistic PR lift >=1.25, a candidate fails if paired 95% upper CI for Delta PR(candidate-Logistic) < 0 and either candidate lift <=1.0 or candidate lift <0.67*Logistic lift",
+    "purpose": "prevent an easy-landscape gain from hiding a major new transfer collapse without making the shared Cotabato EQ1 failure disqualifying",
+    "reference": "LOGISTIC_L2 + M"
+  },
+  "complexity": {
+    "report": [
+      "configuration/proxy",
+      "fit time",
+      "inference time",
+      "serialized bytes",
+      "peak memory if practical"
+    ],
+    "role": "secondary; performance governs unless the frozen simplicity tolerance activates"
+  },
+  "complexity_order": [
+    "LOGISTIC_L2",
+    "RANDOM_FOREST",
+    "HIST_GRADIENT_BOOSTING",
+    "XGBOOST"
+  ],
+  "controls": {
+    "historical": "reuse authoritative Stage 4B M/ME/MEG results for Logistic/RF/HistGB; never refit solely to create new values",
+    "interpretation": "E/G controls cannot become the primary architecture and cannot trigger feature engineering",
+    "xgboost": "after the primary XGBOOST+M result and selection freeze, fit XGBOOST+ME and XGBOOST+MEG with the same nested architecture as secondary historical controls"
+  },
+  "cotabato": {
+    "primary": "COTABATO_DAVAO_2019 EQ1 frozen y_positive; never excluded or replaced",
+    "prohibition": "sensitivity labels cannot tune, select, change features, alter the rule or replace EQ1",
+    "sensitivity": [
+      "cumulative_post_EQ3_nov2019",
+      "cumulative_post_EQ4_dic2019"
+    ],
+    "timing": "score cumulative labels only after primary M selection metrics and decision are frozen"
+  },
+  "dataset": {
+    "negatives": 827053,
+    "positives": 8793,
+    "rows": 835846
+  },
+  "ensemble": {
+    "analyses": [
+      "held-out score Spearman correlation",
+      "rank disagreement",
+      "error complementarity"
+    ],
+    "prohibition": "no ensemble fitting, averaging, weight optimisation or leader replacement in Stage 4E-B",
+    "status": "feasibility diagnostic only after individual results freeze"
+  },
+  "explicit_prohibitions": [
+    "no lockbox",
+    "no MEGH",
+    "no Gen-4",
+    "no Gen-3/H-gate change",
+    "no new M/E/G",
+    "no E1/E2/E3",
+    "no post-result rule change",
+    "no ensemble build"
+  ],
+  "features": {
+    "E_columns": 7,
+    "G_columns": 2,
+    "h_used": false,
+    "historical_controls": [
+      "ME",
+      "MEG"
+    ],
+    "no_feature_engineering": "no post-result feature engineering; frozen 60-column M; no new M/E/G; no E1/E2/E3; H absent",
+    "primary": "M",
+    "primary_columns": 60
+  },
+  "frozen_utc": "2026-10-07T21:24:48Z",
+  "h_policy": {
+    "ATITLAN_STAN_2005": "CORE_H_AVAILABLE=0",
+    "COTABATO_DAVAO_2019": "CORE_H_AVAILABLE=0",
+    "DOMINICA_ERIKA_2015": "CORE_H_AVAILABLE=0",
+    "GEN4": "NO",
+    "KUMAMOTO_ASO_2016": "CORE_H_AVAILABLE=1",
+    "LOMBOK_RINJANI_2018": "CORE_H_AVAILABLE=0",
+    "MEGH_EXPERIMENT_UNLOCKED": "NO",
+    "MEGH_TRAINED": "NO",
+    "NOTO_PENINSULA_2024": "AGE_PROXY_ONLY; CORE_H_AVAILABLE=0",
+    "N_VERIFIED_H_CAPABLE": 1
+  },
+  "historical_fixed": {
+    "HIST_GRADIENT_BOOSTING": {
+      "early_stopping": false,
+      "l2_regularization": 1.0,
+      "max_iter": 250,
+      "min_samples_leaf": 50,
+      "random_state": 20261006
+    },
+    "LOGISTIC_L2": {
+      "max_iter": 5000,
+      "penalty": "l2",
+      "solver": "lbfgs"
+    },
+    "RANDOM_FOREST": {
+      "bootstrap": true,
+      "max_depth": null,
+      "max_samples": 0.5,
+      "n_estimators": 100,
+      "n_jobs": 8,
+      "random_state": 20261006
+    }
+  },
+  "historical_grids": {
+    "HIST_GRADIENT_BOOSTING": [
+      {
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 15
+      },
+      {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 15
+      },
+      {
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 31
+      },
+      {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31
+      }
+    ],
+    "LOGISTIC_L2": [
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      }
+    ],
+    "RANDOM_FOREST": [
+      {
+        "max_features": "sqrt",
+        "min_samples_leaf": 100
+      },
+      {
+        "max_features": "sqrt",
+        "min_samples_leaf": 20
+      },
+      {
+        "max_features": 0.33,
+        "min_samples_leaf": 100
+      },
+      {
+        "max_features": 0.33,
+        "min_samples_leaf": 20
+      }
+    ]
+  },
+  "importance": {
+    "logistic": "standardised coefficients from training-only scaling, summarised across folds",
+    "method": "held-out permutation PR-AUC drop on all positives plus 20,000 deterministic negatives; three repeats per fold",
+    "selection": "importance cannot alter features or select the model",
+    "trees": "model-agnostic permutation importance; native impurity/gain may be a labelled secondary diagnostic only"
+  },
+  "input_checkpoints": {
+    "stage3f": "43ecb1f75fadc1bf30710b52a3124c7f19880526088a32a7cece6f983f4ff05a",
+    "stage3g": "a4f8035123658c063f1572bdfd3276906053ba313735ae3371c442e45cbe4664",
+    "stage3h": "f1ea33e848559bcc97f6c8fb7bc7a78c8fca9d004fe924d8c0136d1f488f2d1f",
+    "stage4a": "fd25accb50578bd4f4f28042e42504a89ef936c904d5ed262a0f65fc7fa2452c",
+    "stage4b": "2685d1b6d565de7945e138d9b014d9aa4b53657511552299c19ebc1f4df946b8",
+    "stage4c_a": "09463f7d76cc865b08ad602a5518532c8a4cc2a5131952b73618082bed09bfa7",
+    "stage4c_b": "90835a71a53cb8a544a960ae7d1e36f5a3ea44e524e730cd6f62db22c6e4bd7c",
+    "stage4c_b2": "f548ceb0c501560b603ee7835a6a18b8350899beef92b527dc4d9571fb6aa1f7",
+    "stage4c_b3": "d1ad15c66bb1df312f6738c2c1aeb5d25dc868025641bd92661631408c8d7807",
+    "stage4d": "53041df090fb96edaeb6ee414dd49bd9a86a8e64d1683d8b46f567f37fa544fd",
+    "stage4e_a": "e6e72d30fb7e7bb52e4cdede02809911eb0a63343f481c1f9b9acbcebccd2bf6"
+  },
+  "landscapes": [
+    "KUMAMOTO_ASO_2016",
+    "NOTO_PENINSULA_2024",
+    "LOMBOK_RINJANI_2018",
+    "COTABATO_DAVAO_2019",
+    "ATITLAN_STAN_2005",
+    "DOMINICA_ERIKA_2015"
+  ],
+  "lockbox": "no future lockbox is named, loaded, inspected or scored; all six landscapes are development-exposed",
+  "metrics": {
+    "aggregation": [
+      "median PR-AUC",
+      "median PR lift",
+      "minimum PR lift",
+      "IQR PR lift",
+      "SD log(PR lift)",
+      "per-landscape rank"
+    ],
+    "primary": "PR-AUC (average precision) from raw held-out scores",
+    "primary_transfer": "PR_LIFT = PR-AUC / held-out EQ1 prevalence; six landscapes are six transfer experiments",
+    "prohibited": "pooled terrain-unit performance is never the primary transfer metric and PR-AUC is never called accuracy",
+    "secondary": [
+      "ROC-AUC",
+      "raw Brier",
+      "raw log loss",
+      "raw calibration intercept/slope",
+      "precision",
+      "recall",
+      "F1 at the training-only Stage 4B-style threshold",
+      "prediction-score distribution"
+    ]
+  },
+  "models": [
+    "LOGISTIC_L2",
+    "RANDOM_FOREST",
+    "HIST_GRADIENT_BOOSTING",
+    "XGBOOST"
+  ],
+  "ood": "no final OOD thresholds, adjustment or OOD-based selection; Stage 4D confounding finding retained",
+  "random_seeds": {
+    "historical_stage4b": 20261006,
+    "stage4eb": 20261008
+  },
+  "selection": {
+    "logistic_relative_tolerance": 0.05,
+    "logistic_rule": "if the raw-best complex model's score advantage over LOGISTIC_L2 is <= 5% of abs(LOGISTIC_L2 score), select LOGISTIC_L2",
+    "no_clear_leader": "only if every non-null candidate fails the catastrophic guard or a required metric is non-finite; otherwise exactly one leader",
+    "raw_ranking": "among candidates passing the catastrophic guard, greatest ROBUST_SCORE; exact ties (1e-12) use COMPLEXITY_ORDER",
+    "runner_up": "highest-ranked eligible model other than the selected leader after applying the same score and exact-tie ordering",
+    "score": "ROBUST_SCORE = 0.70*log(MEDIAN_LIFT) + 0.30*log(WORST_LIFT); all lifts must be finite and > 0",
+    "selection_margin": "selected ROBUST_SCORE minus RUNNER_UP ROBUST_SCORE; may be negative when the preregistered simplicity override selects Logistic",
+    "tiny_median_pr_auc_delta": 0.002,
+    "uncertainty_rule": "also select LOGISTIC_L2 when raw-best median PR-AUC improvement is <=0.002 AND the 95% paired bootstrap interval for the median six-landscape PR-AUC difference includes zero"
+  },
+  "stability": {
+    "method": "remove one of the six already-computed outer results, recompute summaries/ranking without retraining",
+    "report": "five-landscape wins, leader changes, driving landscape, Noto and Atitlan dependence"
+  },
+  "stage": "4E-B",
+  "status": "FROZEN BEFORE ANY STAGE 4E-B MODEL FIT",
+  "v1_freeze_sha256": "9881cc24ff787f60da842fe5e75c519c3b3dbee4cc3b757a9717edefb0e927f1",
+  "validation": {
+    "held_out_rule": "no held-out Y, X summary, sampling, threshold, calibration or score may affect training or tuning",
+    "inner": "within each outer fold, leave one of the five training landscapes out; the outer landscape is absent from all tuning",
+    "inner_selection": "maximum unweighted mean inner-landscape PR-AUC; configurations within 0.005 use the earliest grid entry",
+    "outer": "leave one whole landscape out; train on five; evaluate every unit of the held-out landscape",
+    "preprocessing": "none for tree models; Logistic historical predictions retain training-only Stage 4B z-scaling",
+    "sampling": "Stage 4B exact rule: every positive plus at most 20,000 negatives per training landscape, selected by the frozen terrain-unit hash order",
+    "weighting": "Stage 4B landscape-balanced sampling-corrected weights; every training landscape has equal total weight and retains its population prevalence"
+  },
+  "xgboost": {
+    "configurations": [
+      {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 2,
+        "min_child_weight": 10,
+        "n_estimators": 300,
+        "reg_alpha": 1.0,
+        "reg_lambda": 10.0,
+        "subsample": 0.8
+      },
+      {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "min_child_weight": 5,
+        "n_estimators": 200,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.8
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 3,
+        "min_child_weight": 10,
+        "n_estimators": 300,
+        "reg_alpha": 1.0,
+        "reg_lambda": 10.0,
+        "subsample": 0.8
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 5,
+        "n_estimators": 200,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.8
+      },
+      {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 10,
+        "n_estimators": 300,
+        "reg_alpha": 1.0,
+        "reg_lambda": 10.0,
+        "subsample": 0.8
+      },
+      {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 5,
+        "n_estimators": 200,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0,
+        "subsample": 0.8
+      },
+      {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "n_estimators": 300,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "subsample": 1.0
+      },
+      {
+        "colsample_bytree": 0.9,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 1,
+        "n_estimators": 300,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "subsample": 0.9
+      }
+    ],
+    "fixed": {
+      "eval_metric": "logloss",
+      "max_bin": 256,
+      "n_jobs": 8,
+      "objective": "binary:logistic",
+      "random_state": 20261008,
+      "tree_method": "hist",
+      "verbosity": 0
+    },
+    "isolation": "Science_Fair_ML_V2/.ml_site only; shared .venv unchanged",
+    "version": "2.1.4"
+  }
+}

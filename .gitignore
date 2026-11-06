@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*~
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Raw, processed and intermediate scientific data
+data/
+outputs/
+models/
+predictions/
+checkpoints/
+candidate_inbox/
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.parquet
+*.feather
+
+# Geospatial and large binary products
+*.tif
+*.tiff
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.sbn
+*.sbx
+*.las
+*.laz
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Private/local documents and logs
+*.docx
+*.xlsx
+*.xls
+*.log
+*.tmp
+*.bak
+
+# Keep curated public result tables and figures already tracked explicitly.

@@ -1,0 +1,19 @@
+# Versions recorded by the frozen Stage 4E-B and elevation-experiment checkpoints.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+joblib==1.6.0
+threadpoolctl==3.7.0
+xgboost==2.1.4
+geopandas==1.1.4
+rasterio==1.4.4
+Pillow==12.3.0
+jsonschema==4.26.0
+openpyxl==3.1.5
+pyogrio==0.13.0
+pyproj==3.7.1
+shapely==2.1.2
+whitebox==2.3.6
+pytest==9.1.1

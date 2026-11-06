@@ -1,0 +1,13 @@
+{
+  "files": {
+    "outputs/stage4e_b/STAGE4EB_MODEL_CONFIGURATIONS.tsv": "fc26d1feecf7d4c51b87b08eeed7daa6ff6594d667750c29527550a60af32433",
+    "outputs/stage4e_b/STAGE4EB_PREREGISTRATION.json": "1d13cfa052a7b14e3847adb42658373009a9178c911c16bf43cbc619d7d6627f",
+    "outputs/stage4e_b/STAGE4EB_PREREGISTRATION.md": "0f73eb222ea6eb35e7d3f9bda190f982ebf2198ce324deba1d0f8db7df69869c",
+    "src/sfv2/stage4eb_prereg.py": "2e344fad6a470c55cf321343c6af9624c2ab58668e5e93eca47669f3952cf3c9"
+  },
+  "frozen_utc": "2026-10-07T21:24:48Z",
+  "result_files_existing_before_freeze": [],
+  "stage": "4E-B",
+  "status": "FROZEN_BEFORE_ANY_NEW_MODEL_FIT",
+  "xgboost_installed_before_freeze": false
+}

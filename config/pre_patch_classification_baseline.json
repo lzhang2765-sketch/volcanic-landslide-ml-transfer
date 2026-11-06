@@ -1,0 +1,471 @@
+{
+  "as_of": "2026-10-05",
+  "candidates": [
+    {
+      "landscape_id": "LOMBOK_RINJANI_2018",
+      "m_gate": "PASS",
+      "omega_gate": "PASS",
+      "priority_class": "KNOWN_V1_DECISION_PENDING",
+      "screen_status": "DEEP_SCREEN",
+      "screening_score": 74.7
+    },
+    {
+      "landscape_id": "ATITLAN_STAN_2005",
+      "m_gate": "PASS",
+      "omega_gate": "PASS",
+      "priority_class": "KNOWN_V1_DECISION_PENDING",
+      "screen_status": "DEEP_SCREEN",
+      "screening_score": 73.0
+    },
+    {
+      "landscape_id": "KURIKOMA_2008",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "KNOWN_V1_DECISION_PENDING",
+      "screen_status": "DEEP_SCREEN",
+      "screening_score": 69.0
+    },
+    {
+      "landscape_id": "CINCHONA_POAS_2009",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "KNOWN_V1_DECISION_PENDING",
+      "screen_status": "DEEP_SCREEN",
+      "screening_score": 58.3
+    },
+    {
+      "landscape_id": "CAPELLADES_TURRIALBA_2016",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 49.3
+    },
+    {
+      "landscape_id": "GUATEMALA_1976",
+      "m_gate": "UNCERTAIN",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 56.3
+    },
+    {
+      "landscape_id": "EL_SALVADOR_2001_JAN",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 41.7
+    },
+    {
+      "landscape_id": "EL_SALVADOR_2001_FEB",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 31.0
+    },
+    {
+      "landscape_id": "EL_SALVADOR_1986",
+      "m_gate": "UNCERTAIN",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 26.7
+    },
+    {
+      "landscape_id": "SAN_VICENTE_IDA_2009",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 45.0
+    },
+    {
+      "landscape_id": "NICARAGUA_MITCH_1998",
+      "m_gate": "UNCERTAIN",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 55.7
+    },
+    {
+      "landscape_id": "MATZACO_PUEBLA_2017",
+      "m_gate": "PASS",
+      "omega_gate": "PASS",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 55.0
+    },
+    {
+      "landscape_id": "TEZIUTLAN_PUEBLA",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 41.3
+    },
+    {
+      "landscape_id": "PICO_DE_ORIZABA",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 34.3
+    },
+    {
+      "landscape_id": "PUERTO_RICO_MARIA_2017",
+      "m_gate": "PASS",
+      "omega_gate": "PASS",
+      "priority_class": "REFERENCE_ONLY",
+      "screen_status": "HOLD",
+      "screening_score": 72.0
+    },
+    {
+      "landscape_id": "DOMINICA_MARIA_2017",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 65.0
+    },
+    {
+      "landscape_id": "CHARIM_LESSER_ANTILLES",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 44.3
+    },
+    {
+      "landscape_id": "HAWAII_KOHALA_KIHOLO_2006",
+      "m_gate": "PASS",
+      "omega_gate": "FAIL",
+      "priority_class": "REJECT",
+      "screen_status": "REJECT",
+      "screening_score": 65.0
+    },
+    {
+      "landscape_id": "HAWAII_OAHU_KOOLAU",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 53.7
+    },
+    {
+      "landscape_id": "HAWAII_KAUAI_2018",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 42.0
+    },
+    {
+      "landscape_id": "POHNPEI_CUMULATIVE",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 61.3
+    },
+    {
+      "landscape_id": "CHUUK_CHATAAN_2002",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 51.3
+    },
+    {
+      "landscape_id": "OREGON_CASCADES_SLIDO",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 74.3
+    },
+    {
+      "landscape_id": "WASHINGTON_CASCADES_WASLID",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 59.0
+    },
+    {
+      "landscape_id": "COLUMBIA_RIVER_GORGE_BASALT",
+      "m_gate": "PASS",
+      "omega_gate": "PASS",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 78.7
+    },
+    {
+      "landscape_id": "MAMMOTH_LAKES_1980",
+      "m_gate": "UNCERTAIN",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 48.7
+    },
+    {
+      "landscape_id": "HOKKAIDO_IBURI_2018",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 58.7
+    },
+    {
+      "landscape_id": "KUMAMOTO_ASO_2016",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 66.0
+    },
+    {
+      "landscape_id": "ASO_2012_RAIN",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 52.0
+    },
+    {
+      "landscape_id": "IZU_OSHIMA_2013",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 68.3
+    },
+    {
+      "landscape_id": "MADEIRA_2010",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 50.0
+    },
+    {
+      "landscape_id": "SAO_MIGUEL_AZORES",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 50.0
+    },
+    {
+      "landscape_id": "SETE_CIDADES_AZORES",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 31.7
+    },
+    {
+      "landscape_id": "FLORES_AZORES",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "REJECT",
+      "screen_status": "REJECT",
+      "screening_score": 23.0
+    },
+    {
+      "landscape_id": "FAIAL_1998",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 18.0
+    },
+    {
+      "landscape_id": "ISCHIA",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 47.3
+    },
+    {
+      "landscape_id": "CAMPANIA_SARNO_1998",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 58.0
+    },
+    {
+      "landscape_id": "IFFI_ITALIAN_VOLCANIC_DISTRICTS",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 65.3
+    },
+    {
+      "landscape_id": "ICELAND_EAST_FJORDS",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 44.0
+    },
+    {
+      "landscape_id": "BANKS_PENINSULA_2021",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 64.3
+    },
+    {
+      "landscape_id": "COROMANDEL_GABRIELLE_2023",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 68.7
+    },
+    {
+      "landscape_id": "NZ_GABRIELLE_EAST_COAST",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "REJECT",
+      "screen_status": "REJECT",
+      "screening_score": 54.0
+    },
+    {
+      "landscape_id": "WILSONS_RIVER_NSW_2022",
+      "m_gate": "PASS",
+      "omega_gate": "PASS",
+      "priority_class": "PRIORITY_A",
+      "screen_status": "DEEP_SCREEN",
+      "screening_score": 80.0
+    },
+    {
+      "landscape_id": "REUNION_BDMVT",
+      "m_gate": "PASS",
+      "omega_gate": "FAIL",
+      "priority_class": "REJECT",
+      "screen_status": "REJECT",
+      "screening_score": 56.7
+    },
+    {
+      "landscape_id": "SALAZIE_RESEARCH",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 47.7
+    },
+    {
+      "landscape_id": "MOUNT_ELGON_UGANDA",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 53.3
+    },
+    {
+      "landscape_id": "CAMEROON_BAMENDA",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 47.7
+    },
+    {
+      "landscape_id": "MOUNT_CAMEROON_LIMBE",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 36.7
+    },
+    {
+      "landscape_id": "ETHIOPIA_DESSIE_RIFT_MARGIN",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 37.0
+    },
+    {
+      "landscape_id": "ETHIOPIA_BLUE_NILE_PLATEAU",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 42.7
+    },
+    {
+      "landscape_id": "RWANDA_VIRUNGA_NW",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 47.7
+    },
+    {
+      "landscape_id": "KENYA_ABERDARE",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 32.7
+    },
+    {
+      "landscape_id": "PADANG_TANDIKAT_2009",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 47.7
+    },
+    {
+      "landscape_id": "CIANJUR_2022",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 41.7
+    },
+    {
+      "landscape_id": "LEYTE_PHILIPPINES",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 38.7
+    },
+    {
+      "landscape_id": "REVENTADOR_1987",
+      "m_gate": "UNCERTAIN",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 40.0
+    },
+    {
+      "landscape_id": "CENTRAL_WESTERN_ANDES",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "HOLD",
+      "screen_status": "HOLD",
+      "screening_score": 49.3
+    },
+    {
+      "landscape_id": "PATAGONIA_PALI",
+      "m_gate": "PASS",
+      "omega_gate": "UNCERTAIN",
+      "priority_class": "PRIORITY_B",
+      "screen_status": "PROMISING",
+      "screening_score": 54.0
+    }
+  ],
+  "purpose": "Deterministic comparison baseline captured before the authorized Stage 1 completion patch.",
+  "schema": "SFV2_STAGE1_PRE_PATCH_CLASSIFICATION_BASELINE_V1"
+}

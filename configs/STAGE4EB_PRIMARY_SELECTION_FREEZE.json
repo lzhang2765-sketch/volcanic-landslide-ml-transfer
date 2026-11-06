@@ -1,0 +1,75 @@
+{
+  "COTABATO_EQ1_PRIMARY": "YES",
+  "CUMULATIVE_COTABATO_ACCESSED_FOR_SELECTION": "NO",
+  "GEN3_MODIFIED": "NO",
+  "H_USED": "NO",
+  "LOCKBOX_TOUCHED": "NO",
+  "MEGH_TRAINED": "NO",
+  "decision": {
+    "development_leader": "LOGISTIC_L2",
+    "logistic_score": 0.6691629380624601,
+    "median_delta_bootstrap_ci": [
+      0.0,
+      0.0
+    ],
+    "median_pr_auc_delta_vs_logistic": 0.0,
+    "raw_best": "LOGISTIC_L2",
+    "raw_best_score": 0.6691629380624601,
+    "reason": "raw best robust score: LOGISTIC_L2",
+    "relative_score_advantage_vs_logistic": 0.0,
+    "runner_up": "RANDOM_FOREST",
+    "selection_margin": 0.024049820599491567,
+    "simplicity_tiebreak_activated": false
+  },
+  "files": {
+    "outputs/stage4e_b/STAGE4EB_DEVELOPMENT_LEADER.json": "2f0a518f0926487ee98f119238a2c12926b31943f9afb0516e2b1d6c954dfc94",
+    "outputs/stage4e_b/STAGE4EB_INNER_SELECTIONS.tsv": "e6a697bf0ce5b9d75ca2f1c1cced05e7a4eb2a6b63fea345a60d680b07d0e64b",
+    "outputs/stage4e_b/STAGE4EB_LOLO_RESULTS.tsv": "3f14c8c544fad180725792ffd6f14b164940abe8f516b2779249d58ffe423b62",
+    "outputs/stage4e_b/STAGE4EB_MODEL_COMPARISON.tsv": "066bdcc66c397077ac5dee656636a7e690ac588a217bdf71571167f5a660abaf",
+    "outputs/stage4e_b/STAGE4EB_RANK_STABILITY.tsv": "9dafd67ae4203eb2c022b75764122de38a7efe7b7784ef0f68380e434f3818d0",
+    "outputs/stage4e_b/STAGE4EB_ROBUST_SELECTION.tsv": "87aac09a6446483658002c4274d82d24b010862123a273e0f821aed51d8f5ca6",
+    "outputs/stage4e_b/STAGE4EB_SPATIAL_BOOTSTRAP.tsv": "7efcbc84e30300ec11e1ed4bff9a8a1709911c462669a6c1939c1528634f2a01"
+  },
+  "frozen_utc": "2026-10-07T21:36:08Z",
+  "input_integrity": {
+    "checkpoint_hashes": {
+      "stage3f": "43ecb1f75fadc1bf30710b52a3124c7f19880526088a32a7cece6f983f4ff05a",
+      "stage3g": "a4f8035123658c063f1572bdfd3276906053ba313735ae3371c442e45cbe4664",
+      "stage3h": "f1ea33e848559bcc97f6c8fb7bc7a78c8fca9d004fe924d8c0136d1f488f2d1f",
+      "stage4a": "fd25accb50578bd4f4f28042e42504a89ef936c904d5ed262a0f65fc7fa2452c",
+      "stage4b": "2685d1b6d565de7945e138d9b014d9aa4b53657511552299c19ebc1f4df946b8",
+      "stage4c_a": "09463f7d76cc865b08ad602a5518532c8a4cc2a5131952b73618082bed09bfa7",
+      "stage4c_b": "90835a71a53cb8a544a960ae7d1e36f5a3ea44e524e730cd6f62db22c6e4bd7c",
+      "stage4c_b2": "f548ceb0c501560b603ee7835a6a18b8350899beef92b527dc4d9571fb6aa1f7",
+      "stage4c_b3": "d1ad15c66bb1df312f6738c2c1aeb5d25dc868025641bd92661631408c8d7807",
+      "stage4d": "53041df090fb96edaeb6ee414dd49bd9a86a8e64d1683d8b46f567f37fa544fd",
+      "stage4e_a": "e6e72d30fb7e7bb52e4cdede02809911eb0a63343f481c1f9b9acbcebccd2bf6"
+    },
+    "checkpoints": {
+      "stage3f": "outputs/stage3f/STAGE3F_CHECKPOINT.json",
+      "stage3g": "outputs/stage3g/STAGE3G_CHECKPOINT.json",
+      "stage3h": "outputs/stage3h/STAGE3H_CHECKPOINT.json",
+      "stage4a": "outputs/stage4a/STAGE4A_CHECKPOINT.json",
+      "stage4b": "outputs/stage4b/STAGE4B_CHECKPOINT.json",
+      "stage4c_a": "outputs/stage4c_a/STAGE4C_A_CHECKPOINT.json",
+      "stage4c_b": "outputs/stage4c_b/STAGE4C_B_CHECKPOINT.json",
+      "stage4c_b2": "outputs/stage4c_b2/STAGE4C_B2_CHECKPOINT.json",
+      "stage4c_b3": "outputs/stage4c_b3/STAGE4C_B3_CHECKPOINT.json",
+      "stage4d": "outputs/stage4d/STAGE4D_CHECKPOINT.json",
+      "stage4e_a": "outputs/stage4e_a/STAGE4EA_CHECKPOINT.json"
+    },
+    "v1": {
+      "missing_strict": [],
+      "modified_strict": [],
+      "strict_files": 153,
+      "supporting_changed_or_missing": [],
+      "unexpected_in_authoritative_dirs": [],
+      "v1_intact": true,
+      "writes_performed": 0
+    }
+  },
+  "preregistration_freeze_sha256": "9143aaec8efd1983ea674e582168a941161518c05021c27eab936a0b0de00f6f",
+  "stage": "4E-B",
+  "status": "PRIMARY_M_SELECTION_FROZEN_BEFORE_CONTROLS_OR_CUMULATIVE_SENSITIVITY",
+  "xgboost_version": "2.1.4"
+}

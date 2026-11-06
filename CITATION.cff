@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the repository and the associated research paper when available."
+title: "Geographical Transferability of Machine-Learning Landslide Susceptibility Models Across Volcanic Landscapes"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Leo
+version: 0.1.0
+license: MIT
+keywords:
+  - landslide susceptibility
+  - geographical transfer
+  - volcanic landscapes
+  - machine learning
+  - leave-one-landscape-out
+abstract: "Code and reproducibility materials for a six-landscape study of geographical transfer in machine-learning landslide susceptibility modelling."
